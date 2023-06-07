@@ -2,10 +2,6 @@ import React, { useState } from 'react'
 
 export default function TestOptions({ test, setTest }) {
 
-  const handleButtonClick = (testId) => {
-    setTest(testId);
-  };
-
   return (
     <>
       <h2 className='mb-2 text-center font-medium'>Choose one!</h2>
@@ -37,7 +33,7 @@ export default function TestOptions({ test, setTest }) {
             onClick={() => { 
               setTest(3) 
             }}>
-            Send a repetitive message in LinkedIn
+            Send a repetitive email to your teamwork
           </button>
         </li>
       </ul>
