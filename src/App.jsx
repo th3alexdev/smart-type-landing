@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import {
   Bubble,
   Section,
+  TestBrowser,
+  TestCommand,
   TestOptions
 } from "./routes"
 import './css/index.css'
@@ -64,21 +66,15 @@ function App() {
               test={ test }
               setTest={ setTest }
             />
-            <div className='flex mb-2 items-center'>
-              <h2 className='inline mr-2 h-max'>
-                Type this: 
-              </h2>
-              <div className='font-bold flex gap-2 rounded-md'>
-                <pre className='inline px-2 py-0.5 rounded-sm bg-command '>/</pre>
-                <pre className='inline px-2 py-0.5 rounded-sm bg-command'>p</pre>
-                <pre className='inline px-2 py-0.5 rounded-sm bg-command'>r</pre>
-                <pre className='inline px-2 py-0.5 rounded-sm bg-command'>o</pre>
-                <pre className='inline px-2 py-0.5 rounded-sm bg-command'>m</pre>
-                <pre className='inline px-2 py-0.5 rounded-sm bg-command'>p</pre>
-                <pre className='inline px-2 py-0.5 rounded-sm bg-command'>t</pre>
-              </div>
-            </div>
+
+            <TestCommand
+              test={ test }
+            />
           </div>
+          <TestBrowser 
+            test={ test }
+            setTest={ setTest }
+          />
         </Section>
         <Section 
           sectionId="compatibility"
