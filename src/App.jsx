@@ -7,17 +7,21 @@ import {
   TestOptions
 } from "./routes"
 import './css/index.css'
+import { COMMANDS } from './constants/commands';
 
 function App() {
 
   const [test, setTest] = useState(1);
+
+  const command = COMMANDS[test];
+  const [inputValue, setInputValue] = useState('');
 
   return (
     <>
       <main>
         <Section 
           sectionId="home"
-          customClass="pt-16"
+          customClass="pt-24"
         >
           <h1 className='text-primary mb-3.5 md:mb-10 font-bold'>
               <span className='text-black mr-0.5 block font-semibold text-3xl sm:text-5xl'>Welcome to</span>
@@ -46,12 +50,12 @@ function App() {
           <div className='ml-4 flex flex-col items-center md:items-center h-max gap-3 md:w-max'>
             <a 
               href='#' aria-label="Get Started" 
-              className='px-8 py-1.5 bg-primary text-white rounded-md w-max font-medium'
+              className='px-8 py-1.5 bg-primary text-white rounded-md w-max font-medium hover:bg-primary-hov transition duration-300 ease-in-out'
             > Get Started
             </a>          
             <a
               href="#test" aria-label='Or Test It First'
-              className='text-xs w-max h-max underline'
+              className='text-xs w-max h-max underline text-gray-500 hover:text-gray-800 transition duration-300 ease-in-out'
             > Or Test It First
             </a>
           </div>
@@ -68,23 +72,25 @@ function App() {
             />
 
             <TestCommand
-              test={ test }
+              command={ command }
             />
           </div>
           <TestBrowser 
             test={ test }
             setTest={ setTest }
+            inputValue={ inputValue }
+            setInputValue={ setInputValue }
           />
         </Section>
         <Section 
           sectionId="compatibility"
           title={`Use SmartType anywhere you go!`}
-          customClass="text-center grid place-items-center pb-32"
+          customClass="text-center grid place-items-center pb-44"
           titleClass="mb-4"
         >
           <div className='mb-4 md:mb-8 text-sm md:text-base'>
             <h2 className='font-normal mb-2'>With Google Chrome, <br /> Microsoft Edge or Opera.</h2>
-            <h2 className='font-normal'>Firefox Comming Soon!</h2>
+            <h2 className='font-normal text-xs text-gray-500'>Firefox Comming Soon!</h2>
           </div>
           
           <div className='px-2 flex flex-col items-center justify-center max-w-md'>
