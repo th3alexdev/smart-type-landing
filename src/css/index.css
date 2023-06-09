@@ -30,3 +30,6 @@ img {
     -webkit-user-drag: none;
 }
 
+textarea {
+    @apply font-input
+}
