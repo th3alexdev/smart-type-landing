@@ -5,7 +5,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      body: ['General Sans', 'sans-serif']
+      body: ['General Sans', 'sans-serif'],
+      input: ['Segoe UI', 'Helvetica Neue', 'Helvetica', 'Lucida Grande', 'Arial', 'Ubuntu', 'Cantarell', 'Fira Sans', 'sans-serif']
     },
     extend: {
       backgroundImage: {
@@ -35,6 +36,21 @@ export default {
         'mail-sidebar-sec': '#4285F4',
         'mail-sidebar-thi': '#EFEFEF',
       },
+      screens: {
+        'xs': '300px',
+        '2xs': '380px',
+        '3xs': '410px',
+        '4xs': '450px',
+        '5xs': '540px',
+        '6xs': '570px',
+        '7xs': '585px',
+        'sm': '640px',
+        '2sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1440px',
+      }
     },
   },
   plugins: [],
