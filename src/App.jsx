@@ -13,8 +13,12 @@ function App() {
 
   const [test, setTest] = useState(1);
 
-  const command = COMMANDS[test];
+  const command = COMMANDS[test].SHORTCUT;
   const [inputValue, setInputValue] = useState('');
+
+  const handleToggleOptions = () => {
+    setInputValue('')
+  }
 
   return (
     <>
@@ -69,9 +73,11 @@ function App() {
             <TestOptions
               test={ test }
               setTest={ setTest }
+              toggleOptions={ handleToggleOptions }
             />
 
             <TestCommand
+              input={ inputValue }
               command={ command }
             />
           </div>
@@ -80,6 +86,8 @@ function App() {
             setTest={ setTest }
             inputValue={ inputValue }
             setInputValue={ setInputValue }
+            toggleOptions={ handleToggleOptions }
+            command={ command }
           />
         </Section>
         <Section 
