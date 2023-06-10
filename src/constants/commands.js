@@ -12,6 +12,6 @@ export const COMMANDS = Object.freeze({
     3: {
         SHORTCUT:'/mail',
         EXPANSION: "Hello Team, \nI hope this email finds you well. I wanted to share some important information with everyone. \n\n[insert mail body here]\n\nThank you for your attention and cooperation. \nBest regards,\n\n[Your Name]",
-        TEXTAREA_STYLES: ''
+        TEXTAREA_STYLES: ['']
     }
 })
