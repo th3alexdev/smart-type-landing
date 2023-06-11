@@ -33,3 +33,45 @@ img {
 textarea {
     @apply font-input
 }
+
+.line-1{
+  position: relative;
+  border-right: 1px solid rgba(41, 41, 41, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(5px);
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 3s steps(1) forwards;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  0%{ border-right-color: rgba(41, 41, 41, 0.75); }
+  85%{ border-right-color: rgba(41, 41, 41, 0.75); }
+  100%{ border-right-color: transparent; }
+}
+
+.ani-container {
+  animation: fadeOut 2s 1 forwards;
+}
+
+.mess-container {
+  animation: fadeIn 2s 1 forwards;
+}
+
+@keyframes fadeOut {
+  85% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; display: none; }
+  90% { opacity: 0; display: none; }
+  100% { opacity: 1; display: flex; }
+}
