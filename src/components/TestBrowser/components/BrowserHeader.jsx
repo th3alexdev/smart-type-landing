@@ -5,7 +5,8 @@ function BrowserHeader({ test }) {
     <>
         {
         test === 2 && (
-            <div className='w-full h-12 bg-white flex items-center px-3 justify-between gap-2 border-b border-slate-400'>
+            <div className='w-full h-12 bg-white flex items-center px-3 justify-between gap-2 border-b border-slate-400'
+            aria-label="Browser Header for Instagram Tab">
                 <div className='w-10 h-8 bg-ig-sidebar-sec rounded-full'></div>
                 <div className='w-full'>
                     <div className='w-24 h-2 bg-ig-sidebar-sec'></div>
@@ -20,7 +21,8 @@ function BrowserHeader({ test }) {
         }
         {
         test === 3 && (
-            <div className='w-full h-max py-2 px-3 bg-white flex gap-2 border-b border-slate-200 flex-col'>
+            <div 
+            className='w-full h-max py-2 px-3 bg-white flex gap-2 border-b border-slate-200 flex-col' aria-label="Browser Header for Gmail Tab">
                 <div className='w-10 h-10 bg-ig-sidebar-sec rounded-full'></div>
                 <div className='w-48 h-3 bg-ig-sidebar-sec'></div>
                 <div className='w-full h-max flex gap-2'>
