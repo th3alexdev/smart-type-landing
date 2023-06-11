@@ -4,11 +4,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      body: ['General Sans', 'sans-serif'],
-      input: ['Segoe UI', 'Helvetica Neue', 'Helvetica', 'Lucida Grande', 'Arial', 'Ubuntu', 'Cantarell', 'Fira Sans', 'sans-serif']
-    },
     extend: {
+      fontFamily: {
+        body: ['"General Sans"', 'sans-serif'],
+        input: ['"Segoe UI"', '"Helvetica Neue"', 'Helvetica', '"Lucida Grande"', 'Arial', 'Ubuntu', 'Cantarell', '"Fira Sans"', 'sans-serif']
+      },
       backgroundImage: {
         'blink': "url('./src/assets/svg/blink.svg')",
         'lines': "url('./src/assets/svg/lines.svg')",
