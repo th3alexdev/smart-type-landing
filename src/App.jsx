@@ -35,8 +35,8 @@ function App() {
                 <p className='inline w-max'>
                 It's as simple as typing a command like: 
                 </p>
-                <div className='inline w-12 h-max px-1 pr-3 py-1 bg-command rounded-md font-semibold ml-2'>
-                  <span className='inline-block px-1.5 max-w-[70px] line-1 anim-typewriter'>/socials</span>
+                <div className='inline w-12 h-max pl-2 pr-3 py-1 bg-command rounded-md font-semibold ml-2'>
+                  <span className='inline-block px-1.5 max-w-[70px] line-1 anim-typewriter font-mono'>/socials</span>
                 </div>
               </div>
             </div>
