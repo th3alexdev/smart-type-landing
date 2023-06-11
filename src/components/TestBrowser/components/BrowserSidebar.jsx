@@ -5,7 +5,10 @@ function BrowserSidebar({ test }) {
     <>
       {
         test === 1 && (
-          <div className='hidden md:block w-1/4 h-full bg-chatgpt-sidebar-pri py-2 px-3'>
+          <div 
+            className='hidden md:block w-1/4 h-full bg-chatgpt-sidebar-pri py-2 px-3'
+            aria-label='Browser Sidebar for ChatGPT Tab'
+          >
               <div className='w-full h-9 bg-chatgpt-sidebar-sec mb-4 rounded-sm'></div>
               <div className='w-full h-9 bg-chatgpt-sidebar-sec mb-2 rounded-sm'></div>
               <div className='w-full h-9 bg-chatgpt-sidebar-sec mb-2 rounded-sm'></div>
@@ -15,7 +18,10 @@ function BrowserSidebar({ test }) {
 
       {
         test === 2 && (
-           <div className='hidden md:block w-1/4 bg-ig-sidebar-pri py-2 border-r border-slate-400'>
+           <div 
+            className='hidden md:block w-1/4 bg-ig-sidebar-pri py-2 border-r border-slate-400'
+            aria-label='Browser Sidebar for Instagram Tab'
+           >
               <div className='w-full h-9 bg-ig-sidebar-pri mb-1 rounded-sm flex items-center justify-between px-2 gap-2'>
                   <div className='w-8 h-8 bg-ig-sidebar-sec rounded-full'></div>
                   <div className='w-20'>
