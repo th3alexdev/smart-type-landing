@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ManageContext } from '../../contexts/ContextProvider';
 
-export default function TestOptions({ test, setTest, toggleOptions }) {
+export default function TestOptions({ }) {
+  const { test, setTest, handleToggleOptions } = useContext(ManageContext);
 
   const options = [
     {
@@ -22,14 +24,17 @@ export default function TestOptions({ test, setTest, toggleOptions }) {
   
   const handleClick = (id) => {
     setTest(id);
-    toggleOptions();
+    handleToggleOptions();
   };
 
   return (
     <>
-        <h2 className='mb-2  text-center font-medium'>Choose one!</h2>
-        <div className='h-max relative mb-6 md:mb-8'>
-          <ul className='relative z-20 mx-auto flex flex-col sm:flex-row gap-3 md:gap-5 text-center max-w-2xl'>
+      <h2 className='mb-2  text-center font-medium'>Choose one!</h2>
+      <div className='h-max relative mb-6 md:mb-8'>
+          <ul 
+            className='relative z-20 mx-auto flex flex-col sm:flex-row gap-3 md:gap-5 text-center max-w-2xl'
+            role='group' aria-label='Test Options'
+          >
             {
               options.map((option) => (
                 <li className='sm:w-1/3 md:w-max' key={ option.id }> 
