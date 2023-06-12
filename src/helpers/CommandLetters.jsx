@@ -2,8 +2,10 @@ export const renderCommandLetters = (command, matchingPart, isComplete) => {
   let matchedCount = 0;
   let isPreviousMatched = false;
 
+  // Split the command string into an array of letters and map over each letter
   return command.split('').map((letter, index) => {
 
+    // If the command is complete, render a pre element with the letter, using a specific class for styling
     if(isComplete) {
       return (
         <pre key={index} className="inline px-2 py-0.5 font-mono rounded-sm bg-secondary-hov text-white font-bold">
@@ -13,6 +15,7 @@ export const renderCommandLetters = (command, matchingPart, isComplete) => {
     }
 
     if (matchingPart[index] === letter) {
+      // If the current letter matches the corresponding letter in the matchingPart
       if (isPreviousMatched) {
         matchedCount++;
       } else {
@@ -21,6 +24,7 @@ export const renderCommandLetters = (command, matchingPart, isComplete) => {
       }
 
       return (
+        // Render a pre element with the letter, applying different styles based on the match status
         <pre
           key={index}
           className={`inline px-2 py-0.5 rounded-sm ${
@@ -34,6 +38,7 @@ export const renderCommandLetters = (command, matchingPart, isComplete) => {
 
     isPreviousMatched = false;
 
+    // Render a pre element with the letter, using a specific class for styling
     return (
       <pre key={index} className="inline font-mono px-2 py-0.5 rounded-sm bg-command">
         {letter}

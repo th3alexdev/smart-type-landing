@@ -11,13 +11,15 @@ function BrowserTextarea({ containerRef }) {
     command
   } = useContext(ManageContext);
 
+  
   const [disabledCurrent, setDisabledCurrent] = useState(false)
 
+  // Disable the current textarea if inputValue is empty
   useEffect(() => {
     if(inputValue === '') setDisabledCurrent(false)
   }, [inputValue]);
 
-
+  // Handle input change event
   const handleInputChange = (e) => {
     if (command === e.target.value) {
       setDisabledCurrent(true);
@@ -30,15 +32,17 @@ function BrowserTextarea({ containerRef }) {
     }
   };
 
+  // Handle key down event
   const handleKeyDown = (e) => {
     if(test === 3) return
     
-    if(e.keyCode === 13) {
+    if(e.keyCode === 13) { // Enter Key
       textareaRef.current.style.height = '48px';
       textareaRef.current.style.height = textareaRef.current.scrollHeight + 'px';
     }
   }
 
+  // Configuration object for different test cases
   const config = {
     1: {
       className: 'px-8 py-6',
@@ -54,6 +58,7 @@ function BrowserTextarea({ containerRef }) {
     },
   };
 
+  // Destructure the className and inputClassName from the config based on the test value
   const { className, inputClassName } = config[test] || {};
 
   return (
