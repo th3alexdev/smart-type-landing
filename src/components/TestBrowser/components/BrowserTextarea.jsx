@@ -66,7 +66,7 @@ function BrowserTextarea({ containerRef }) {
       <div className='container mx-auto mt-4'>
         <textarea 
           placeholder='Type here!'
-          className={`w-full py-2.5 ${inputClassName} resize-none`}
+          className={`w-full pt-textarea pb-textarea ${inputClassName} resize-none`}
           onChange={ handleInputChange }
           onKeyDown={ (e) => handleKeyDown(e) }
           value={ inputValue }
