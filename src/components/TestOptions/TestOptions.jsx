@@ -39,7 +39,7 @@ export default function TestOptions({ }) {
               options.map((option) => (
                 <li className='sm:w-1/3 md:w-max' key={ option.id }> 
                   <button 
-                    className={`min-w-full sm:w-full md:w-auto min-h-full px-2 py-2 ${test === option.id ? 'bg-yellow' : 'bg-btnGray bg-lines bg-fill'}`}
+                    className={`min-w-full sm:w-full md:w-auto min-h-full px-2 py-2 ${test === option.id ? 'bg-yellow' : 'bg-btn-gray bg-lines bg-fill'}`}
                     aria-label={ option.ariaLabel }
                     onClick={ () => handleClick(option.id) }
                     >
@@ -49,7 +49,7 @@ export default function TestOptions({ }) {
               ))
             }
           </ul>
-        <div className='hidden md:block absolute z-10 inset-y-1/2 w-full h-0.5 bg-[#B3B3B3]'></div>
+        <div className='hidden md:block absolute z-10 inset-y-1/2 w-full h-1 bg-gray-300'></div>
       </div>
     </>
   )
