@@ -2,6 +2,11 @@ import React, { useRef, useContext } from 'react'
 import { BrowserHeader, BrowserSidebar, BrowserTextarea, BrowserTab } from './components/routes'
 import { ManageContext } from '../../contexts/ContextProvider';
 
+import chatgptIcon from './../../assets/test_browser/chatgpt.webp';
+import instagramIcon from './../../assets/test_browser/instagram.webp';
+import gmailIcon from './../../assets/test_browser/gmail.webp';
+import windowBtns from './../../assets/test_browser/browser-buttons.svg';
+
 function TestBrowser({ }) {    
 
     const { 
@@ -15,17 +20,17 @@ function TestBrowser({ }) {
 
     const tabs = [
         {
-          imgPath: './../src/assets/test_browser/chatgpt.webp',
+          imgPath: chatgptIcon,
           text: 'ChatGPT',
           testValue: 1,
         },
         {
-          imgPath: './../src/assets/test_browser/instagram.webp',
+          imgPath: instagramIcon,
           text: 'Instagram',
           testValue: 2,
         },
         {
-          imgPath: './../src/assets/test_browser/gmail.webp',
+          imgPath: gmailIcon,
           text: 'Emails received',
           testValue: 3,
         },
@@ -70,13 +75,13 @@ function TestBrowser({ }) {
 
   return (
     <div 
-        className='bg-white w-full h-[495px] rounded-t-lg overflow-hidden shadow-lg'
+        className='bg-white w-full h-browser-h rounded-t-lg overflow-hidden shadow-lg'
         ref={ browserContainerRef }
         role='region'
         aria-label='Browser'
     >
         <div className='h-8 bg-tabs-bar flex' role='tablist' aria-label='Browser Tabs'>
-            <img src='./../src/assets/test_browser/browser-buttons.svg' className='mx-3 w-10' alt='trhee macOS window buttons' />
+            <img src={ windowBtns } className='mx-3 w-10' alt='trhee macOS window buttons' />
             {
             tabs.map((tab, index) => (
             <BrowserTab
