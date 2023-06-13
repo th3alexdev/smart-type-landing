@@ -10,9 +10,9 @@ export default {
         input: ['"Segoe UI"', '"Helvetica Neue"', 'Helvetica', '"Lucida Grande"', 'Arial', 'Ubuntu', 'Cantarell', '"Fira Sans"', 'sans-serif']
       },
       backgroundImage: {
-        'blink': "url('./src/assets/svg/blink.svg')",
-        'lines': "url('./src/assets/svg/lines.svg')",
-        'tab-decoration': "url('./src/assets/test_browser/tab-rounded.svg')"
+        'blink': "url('/src/assets/svg/blink.svg')",
+        'lines': "url('/src/assets/svg/lines.svg')",
+        'tab-decoration': "url('/src/assets/test_browser/tab-rounded.svg')"
       },
       backgroundSize: {
         'fill': '200%',
@@ -24,7 +24,7 @@ export default {
         'secondary-hov': '#8080FF',
         'yellow': '#FFE736',
         'fuchsia': '#FF31B4',
-        'btnGray': '#e1e1e1d',
+        'btn-gray': '#e1e1e1d',
         'body': '#EEE',
         'command': '#DEDEDE',
         'tabs-bar': '#D9D9D9',
@@ -35,6 +35,22 @@ export default {
         'mail-sidebar-pri': '#FFF',
         'mail-sidebar-sec': '#4285F4',
         'mail-sidebar-thi': '#EFEFEF',
+        'pseudo-line': '#B3B3B3'
+      },
+      height: {
+        'browser-h': '495px',
+        'expanded-fst': '4.5rem',
+        'expanded-snd_1': '22rem',
+        'expanded-snd_2': '21rem',
+        'expanded-snd_3': '16.5rem',
+        'expanded-snd_4': '14.8rem',
+      },
+      maxWidth: {
+        'img': '50px',
+        'command': '70px'
+      },
+      padding: {
+        'textarea': '0.625rem'
       },
       screens: {
         'xs': '300px',
