@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import {
   Bubble,
+  ImageGallery,
   Section,
   TestBrowser,
   TestCommand,
@@ -36,7 +37,7 @@ function App() {
                 It's as simple as typing a command like: 
                 </p>
                 <div className='inline w-12 h-max pl-2 pr-3 py-1 bg-command rounded-md font-semibold ml-2'>
-                  <span className='inline-block px-1.5 max-w-[70px] line-1 anim-typewriter font-mono'>/socials</span>
+                  <span className='inline-block px-1.5 max-w-command line-1 anim-typewriter font-mono'>/socials</span>
                 </div>
               </div>
             </div>
@@ -50,7 +51,7 @@ function App() {
             <a 
               href='#' 
               aria-label='Get Started' 
-              className='px-8 py-1.5 bg-primary text-white rounded-md w-max font-medium hover:bg-primary-hov transition duration-300 ease-in-out'
+              className='px-8 pt-2 h-9 bg-primary text-white rounded-md w-max font-medium hover:bg-primary-hov transition duration-300 ease-in-out'
             > Get Started
             </a>          
             <a
@@ -75,7 +76,7 @@ function App() {
         <Section 
           sectionId='compatibility'
           title={`Use SmartType anywhere you go!`}
-          customClass='text-center grid place-items-center pb-44'
+          customClass='text-center grid place-items-center pb-40'
           titleClass='mb-4'
           ariaLabel='Browser Compatibility Section'
         >
@@ -85,42 +86,11 @@ function App() {
           </div>
           
           <div className='px-2 flex flex-col items-center justify-center max-w-md' aria-label='Supported Websites'>
-            <div className='filter grayscale flex items-center flex-wrap justify-between gap-y-4 gap-x-1 md:gap-x-9'>
-              <img 
-                src='./../src/assets/webp/chatgpt.webp' alt='ChatGPT logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' /> 
-              <img 
-                src='./../src/assets/webp/bing.webp' alt='Bing logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' />
-              <img 
-                src='./../src/assets/webp/fiverr.webp' alt='Fiverr logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' />
-              <img 
-                src='./../src/assets/webp/gmail.webp' alt='Gmail logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' />
-              <img 
-                src='./../src/assets/webp/google_docs.webp' alt='Google Docs logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' />
-              <img 
-                src='./../src/assets/webp/google_sheets.webp' alt='Google Sheets logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' />
-              <img 
-                src='./../src/assets/webp/linkedin.webp' alt='LikedIn logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' />
-              <img 
-                src='./../src/assets/webp/twitter.webp' alt='Twitter logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' />
-              <img 
-                src='./../src/assets/webp/upwork.webp' alt='Upwork logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' />
-              <img 
-                src='./../src/assets/webp/youtube.webp' alt='Youtube logo' 
-                className='w-1/6 md:3/12 max-w-[50px]' aria-hidden='true' />
-            </div>
+            <ImageGallery />
           </div>
         </Section>
       </main>
-      <footer className='pt-4 pb-14'>
+      <footer className='pt-2 pb-14'>
         <div className='w-max mx-auto flex flex-col justify-center'>
           <h1 className='font-mono font-semibold mb-2'>Designed & Built by Alexander Pérez</h1>
           <div className='flex gap-2 justify-center items-center'>
@@ -129,7 +99,7 @@ function App() {
             </h2>
             <div className='w-1 h-1 bg-gray-700 rounded-full'></div>
             <h2 className='text-sm w-max h-max underline text-gray-600 hover:text-gray-800 transition duration-300 ease-in-out'>
-              <a href='#' target='_blank' rel='noopener noreferrer'>Support the Project</a>
+              <a href='https://paypal.me/th3alexdev?country.x=VE&locale.x=es_XC' target='_blank' rel='noopener noreferrer'>Support the Project</a>
             </h2>
           </div>
         </div>
