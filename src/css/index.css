@@ -6,6 +6,11 @@
   .h-browser-calc {
     height: calc(100% - 64px);
   }
+  
+  .input {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
 }
 
 @layer components {
