@@ -8,7 +8,7 @@ export const renderCommandLetters = (command, matchingPart, isComplete) => {
     // If the command is complete, render a pre element with the letter, using a specific class for styling
     if(isComplete) {
       return (
-        <pre key={index} className="inline px-2 py-0.5 font-mono rounded-sm bg-secondary-hov text-white font-bold">
+        <pre key={index} className="inline h-7 px-2 py-1 font-mono rounded-sm bg-secondary-hov text-white font-bold">
           { letter }
         </pre>
       );
@@ -27,7 +27,7 @@ export const renderCommandLetters = (command, matchingPart, isComplete) => {
         // Render a pre element with the letter, applying different styles based on the match status
         <pre
           key={index}
-          className={`inline px-2 py-0.5 rounded-sm ${
+          className={`inline h-7 px-2 py-1 rounded-sm ${
             matchedCount <= matchingPart.length ? 'font-bold font-mono text-white bg-secondary-hov' : 'bg-command'
           }`}
         >
@@ -40,7 +40,7 @@ export const renderCommandLetters = (command, matchingPart, isComplete) => {
 
     // Render a pre element with the letter, using a specific class for styling
     return (
-      <pre key={index} className="inline font-mono px-2 py-0.5 rounded-sm bg-command">
+      <pre key={index} className="inline h-7 font-mono px-2 py-1 rounded-sm bg-command">
         {letter}
       </pre>
     );
