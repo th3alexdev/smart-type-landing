@@ -27,7 +27,7 @@ const images = [
 const ImageGallery = () => {
 
   return (
-    <div className='filter grayscale flex items-center flex-wrap justify-between gap-y-4 gap-x-1 md:gap-x-9'>
+    <div className='filter grayscale flex items-center flex-wrap justify-between gap-y-4 gap-x-1 xs:gap-x-3 3xs:gap-x-5 4xs:gap-x-7 md:gap-x-9'>
         {
         images.map((image) => (
           <img
