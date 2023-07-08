@@ -49,7 +49,7 @@ function App() {
           </div>
           <div className='ml-4 flex flex-col items-center md:items-center h-max gap-3 md:w-max'>
             <a 
-              href='#' 
+              href='https://github.com/th3alexdev/smart-type' 
               aria-label='Get Started' 
               className='px-8 pt-2 h-9 bg-primary text-white rounded-md w-max font-medium hover:bg-primary-hov transition duration-300 ease-in-out'
             > Get Started
