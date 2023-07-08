@@ -19,9 +19,9 @@ function App() {
           customClass='pt-24'
           ariaLabel='Home Section'
         >
-          <h1 className='text-primary mb-3.5 md:mb-10 font-bold' role="heading" aria-level="1">
-              <span className='text-black mr-0.5 block font-semibold text-3xl sm:text-5xl'>Welcome to</span>
-              <span className='relative text-4xl sm:text-6xl'>
+          <h1 className='text-primary mb-5 md:mb-10 font-bold' role="heading" aria-level="1">
+              <span className='text-black mr-0.5 block font-semibold text-4xl sm:text-5xl'>Welcome to</span>
+              <span className='relative text-5xl sm:text-6xl'>
                 SmartType
                 <span className='absolute right-[-30px] w-5 h-5 md:w-6 md:h-6 bg-blink after:absolute bg-contain'></span>
               </span>
@@ -33,9 +33,9 @@ function App() {
                 Empower your productivity with SmartType, the ultimate browser extension for automating your workflows and saving valuable time by eliminating repetitive typing tasks.
               </p>
               <div className='inline mb-3.5'>
-                <p className='inline w-max'>
-                It's as simple as typing a command like: 
-                </p>
+                <p className='inline w-max'>It's as simple as</p>
+                <br className='3xs:hidden' />
+                <p className='inline w-max'>typing a command like:</p>
                 <div className='inline w-12 h-max pl-2 pr-3 py-1 bg-command rounded-md font-semibold ml-2'>
                   <span className='inline-block px-1.5 max-w-command line-1 anim-typewriter font-mono'>/socials</span>
                 </div>
